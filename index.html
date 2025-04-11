@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/style.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href=""><img src="img/common/logo.png" alt="" /></a>
+      </h1>
+      <nav class="headerMenu">
+        <ul class="gnb">
+          <li>
+            <a href="#">BRAND</a>
+            <ul class="gnb_s">
+              <li><a href="">브랜드스토리</a></li>
+              <li><a href="">브랜드경쟁력</a></li>
+              <li><a href="">협력사</a></li>
+              <li><a href="">본사소개</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">MENU</a>
+            <ul class="gnb_s">
+              <li><a href="">케이크</a></li>
+              <li><a href="">음료</a></li>
+              <li><a href="">디저트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">STORE</a>
+            <ul class="gnb_s">
+              <li><a href="">지역별 매장정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">NEWS</a>
+            <ul class="gnb_s">
+              <li><a href="">언론보도</a></li>
+            </ul>
+          </li>
+          <li class="vi">
+            <a href=""><img src="img/button/menu_video.png" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 모바일 메뉴 -->
+      <nav class="mobileMenu">
+        <ul class="gnb01">
+          <li>
+            <div class="gnb_m">
+              <a href="#">BRAND</a>
+              <div class="but">
+                <div class="minus01"><i class="fa-solid fa-minus"></i></div>
+                <div class="minus02"><i class="fa-solid fa-minus"></i></div>
+              </div>
+            </div>
+
+            <ul class="gnb_s01">
+              <li><a href="">브랜드스토리</a></li>
+              <li><a href="">브랜드경쟁력</a></li>
+              <li><a href="">협력사</a></li>
+              <li><a href="">본사소개</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="gnb_m">
+              <a href="#">MENU</a>
+              <div class="but">
+                <div class="minus01"><i class="fa-solid fa-minus"></i></div>
+                <div class="minus02"><i class="fa-solid fa-minus"></i></div>
+              </div>
+            </div>
+            <ul class="gnb_s01">
+              <li><a href="">케이크</a></li>
+              <li><a href="">음료</a></li>
+              <li><a href="">디저트</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="gnb_m">
+              <a href="#">STORE</a>
+              <div class="but">
+                <div class="minus01"><i class="fa-solid fa-minus"></i></div>
+                <div class="minus02"><i class="fa-solid fa-minus"></i></div>
+              </div>
+            </div>
+
+            <ul class="gnb_s01">
+              <li><a href="">지역별 매장정보</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="gnb_m">
+              <a href="#">NEWS</a>
+              <div class="but">
+                <div class="minus01"><i class="fa-solid fa-minus"></i></div>
+                <div class="minus02"><i class="fa-solid fa-minus"></i></div>
+              </div>
+            </div>
+
+            <ul class="gnb_s01">
+              <li><a href="">언론보도</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div id="close01"><i class="fa-solid fa-xmark"></i></div>
+      </nav>
+      <div class="bars01">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!--pc버전 bar -->
+      <div class="bars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- 모달창 -->
+      <div id="modalBox">
+        <div id="modalContent">
+          <div id="close"><i class="fa-solid fa-xmark"></i></div>
+          <h3>SITEMAP</h3>
+          <ul>
+            <li>
+              <h4>BRAND</h4>
+              <p><a href="">브랜드스토리</a></p>
+              <p><a href="">브랜드경쟁력</a></p>
+              <p><a href="">협력사</a></p>
+              <p><a href="">본사소개</a></p>
+            </li>
+            <li>
+              <h4>MENU</h4>
+              <p><a href="">케이크</a></p>
+              <p><a href="">음료</a></p>
+              <p><a href="">디저트</a></p>
+            </li>
+            <li>
+              <h4>STORE</h4>
+              <p><a href="">지역별 매장정보</a></p>
+            </li>
+            <li>
+              <h4>NEWS</h4>
+              <p><a href="">언론보도</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="visual">
+      <div class="bg"></div>
+      <div class="txt">
+        <p>PREMIUM CAKE & BREAD</p>
+        <h2>JIYUGAOKA</h2>
+        <p>고품격 디저트카페 지유가오카</p>
+      </div>
+    </div>
+    <div id="container">
+      <div class="con01">
+        <div class="wrap">
+          <div class="left">
+            <div class="about">
+              <strong>지유가오카 소개</strong>
+              <h2 class="pcTxt">
+                About<br />
+                Jiyugaoka
+              </h2>
+              <h2 class="moTxt">About Jiyugaoka</h2>
+              <div class="bars02"></div>
+              <p>
+                지유가오카는 숙련된 파티쉐들이<br />
+                모든 케이크와 디저트를<br />
+                정성껏 구워냅니다
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <ul>
+              <a href="">
+                <li>
+                  <div class="story">
+                    <img src="img/main/about_img_1_pc.jpg" alt="" />
+                  </div>
+                  <div class="txt01">
+                    <h3>브랜드스토리</h3>
+                    <p>고품격 디저트카페 지유가오카를 소개합니다</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="story">
+                    <img src="img/main/about_img_2_pc.jpg" alt="" />
+                  </div>
+                  <div class="txt01">
+                    <h3>지역별 매장정보</h3>
+                    <p>지역별 매장 정보를 확인하실 수 있습니다.</p>
+                  </div>
+                </li>
+              </a>
+              <!-- 모바일 화살표 -->
+              <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+              <div class="arrow01"><i class="fa-solid fa-arrow-left"></i></div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="con02">
+        <ul class="wrap02">
+          <li>
+            <div class="bg01">
+              <img src="img/main/main_fermentation_bg_pc.jpg" alt="" />
+            </div>
+            <div class="txt02">
+              <p>Fermentation</p>
+              <h3>업계최초 <strong> 유산균 발효 공법</strong></h3>
+              <div id="button" class="view">
+                <a href="">보러가기 <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="line"></div>
+                <div class="line01"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="bg01">
+              <img src="img/main/main_dessert_bg_pc.jpg" alt="" />
+            </div>
+            <div class="txt02">
+              <p>Dessert</p>
+              <h3>죽기전에 먹어봐야 할 <strong>디저트</strong></h3>
+              <div id="button" class="view02">
+                <a href="">보러가기 <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="line"></div>
+                <div class="line01"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!--모바일 버튼  -->
+        <ul class="navibar">
+          <li>
+            <div></div>
+          </li>
+          <li>
+            <div></div>
+          </li>
+        </ul>
+      </div>
+      <div class="con03">
+        <div class="story">
+          <ul class="story01">
+            <li>
+              <h3>Simple, Refind, Jiyugaoka</h3>
+              <div class="button02">
+                <div class="left02">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <p class="txt03">|</p>
+                <div class="right02">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="bakery_m">
+                <img src="img/main/main_brand_img1_m.png" alt="" />
+              </div>
+              <div class="bakery">
+                <div class="bg03">
+                  <img src="img/main/main_story_img1.png" alt="" />
+                </div>
+                <div class="bg04">
+                  <img src="img/main/main_story_img2.png" alt="" />
+                </div>
+              </div>
+              <h4>숙련된 파티쉐들이 정성껏 구워낸 수제케이크와 디저트</h4>
+              <p class="txt04">
+                지유가오카는 일본 도쿄의 디저트카페로 유명한 지유가오카거리에서
+                영감을 받아 탄생하였습니다.
+                <span
+                  >고급 주택가와 상점들이 골목골목 어우러진 지유가오카 거리의
+                  고즈넉한 분위기를 추구하며,</span
+                ><span
+                  >남녀노소 누구나 편하게 방문하여 정성껏 구워낸 수제케이크와
+                  디저트를 접할 수 있는</span
+                ><span
+                  >순수 대한민국의 토종 기업입니다. 지유가오카를 찾는
+                  고객분들께</span
+                ><span
+                  >화학첨가물을 사용하지 않고100% 수제 디저트로 고객들의 입맛을
+                  사로잡기 위해</span
+                >
+                매장에서 매일 구워내던 1호점의 방식 그대로 오늘도 숙련된
+                파티시에들이 정성껏 구워내고 있습니다.
+              </p>
+            </li>
+            <li>
+              <h3>Premium Cake Story</h3>
+              <div class="button02">
+                <div class="left02">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <p class="txt03">|</p>
+                <div class="right02">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+              <div class="bakery_m">
+                <img src="img/main/main_brand_img2_m.png" alt="" />
+              </div>
+              <div class="bakery">
+                <div class="bg03">
+                  <img src="img/main/main_story_img3.png" alt="" />
+                </div>
+                <div class="bg05">
+                  <img src="img/main/main_story_img4.png" alt="" />
+                </div>
+              </div>
+              <h4>
+                디저트의 본 고장에서 전수받은 기술력과<br />
+                일류호텔 출신 셰프들의 오랜 연구와 노하우로 만드는 수제 케이크
+              </h4>
+              <p class="txt04">
+                디저트의 본 고장에서 전수받은 기술력과,
+                <span
+                  >일류호텔 출신 셰프들의 오랜 연구와 노하우로 만드는 수제
+                  케이크입니다.</span
+                >
+                <span>화학첨가물 없이 최고의 재료로 만들어</span>
+                <span
+                  >부드러움과 적당하게 기분 좋은 달콤함을 느낄 수 있는 고품격
+                  케이크입니다..</span
+                >
+              </p>
+            </li>
+          </ul>
+          <ul class="navibar01">
+            <li class="on"></li>
+            <li></li>
+          </ul>
+          <div class="view04">
+            <a href="#" class="go02"> 브랜드스토리 보러가기</a>
+
+            <div class="bg07"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="con04">
+        <div class="wrap">
+          <div class="wrap01">
+            <div class="interior">
+              <h3>Jiyugaoka <span>Interior</span></h3>
+
+              <ul>
+                <li><img src="img/main/main_interior_img3.jpg" alt="" /></li>
+                <li><img src="img/main/main_interior_img4.jpg" alt="" /></li>
+              </ul>
+              <h4>독특하고 유니크한 컨셉의 인테리어</h4>
+              <p>
+                수많은 카페 중에서 이용자의 발길이 끊기지 않는 공간으로 만들기
+                위해 지유가오카만의 독특하고 유니크한 컨셉으로 소품 하나까지
+                고객분들의 마음을 사로잡는 카페 인테리어와 효율적인 공간을
+                연출합니다.
+              </p>
+              <div class="view01">
+                <a href="#" class="go">인테리어 보러가기</a>
+
+                <div class="bg02"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="con05">
+        <div class="wrap04">
+          <div class="left01">
+            <strong>메뉴소개</strong>
+            <h3>Jiyugaoka <span>Menu</span></h3>
+            <div class="line02"></div>
+            <p>지유가오카의 메뉴를<br />소개합니다</p>
+          </div>
+          <ul class="right01">
+            <li>
+              <a href="">
+                <div class="wrap05">
+                  <div class="bg09"></div>
+                  <div class="bg08">
+                    <img src="img/main/main_menu_img1.png" alt="" />
+                  </div>
+                </div>
+                <div class="txt07">
+                  <h4>케이크</h4>
+                  <p>Cake</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="wrap05">
+                  <div class="bg10"></div>
+                  <div class="bg08">
+                    <img src="img/main/main_menu_img3.png" alt="" />
+                  </div>
+                </div>
+                <div class="txt07">
+                  <h4>디저트</h4>
+                  <p>Dessert</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="wrap05">
+                  <div class="bg11"></div>
+                  <div class="bg08">
+                    <img src="img/main/main_menu_img4.png" alt="" />
+                  </div>
+                </div>
+                <div class="txt07">
+                  <h4>음료</h4>
+                  <p>Drinks</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="con06">
+        <div class="instagram">
+          <h3>인스타그램</h3>
+          <p class="txt06">
+            지유가오카 인스타그램에서<br />
+            많은 사진들을 확인해보세요
+          </p>
+          <ul class="insta">
+            <li>
+              <img src="img/main/main_banner_1_pc.jpg" alt="" />
+            </li>
+            <li>
+              <img src="img/main/main_banner_2_pc.jpg" alt="" />
+            </li>
+            <li>
+              <img src="img/main/main_banner_3_pc.jpg" alt="" />
+            </li>
+          </ul>
+          <div class="txt05">
+            <h2>Instagram</h2>
+            <div calss="line03"></div>
+          </div>
+
+          <div class="prev arr"><i class="fa-solid fa-arrow-left"></i></div>
+          <div class="next arr"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="box">
+            <a href="#">
+              <p class="go04">인스타그램 가기</p>
+              <div class="go03"></div>
+            </a>
+          </div>
+          <!-- 모바일 네비바 -->
+          <ul class="navibar02">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="wrap06">
+        <div class="left03">
+          <p>
+            지유가오카 | 대표자 : 조종철 | 본사 : 성남시 중원구 갈마치로302호
+            우림라이온스벨리5차 | 대표전화 : 02 - 540 - 2204 | 팩스 : 02 - 540 -
+            2237
+          </p>
+          <p>
+            지유가오카 핫초메 사업자번호 : 261 - 81 - 15766 | 지유가오카 브레드
+            사업자번호 : 680 - 87 - 00452
+          </p>
+          <p class="copy">Copyright © 지유가오카 All rights reserved.</p>
+        </div>
+        <div class="right03">
+          <img src="img/content/menu_logo.png" alt="" />
+        </div>
+      </div>
+      <div class="top">
+        <a href="index.html"
+          ><div class="icon"><i class="fa-solid fa-arrow-up"></i></div>
+          <div class="top_s">TOP</div></a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
