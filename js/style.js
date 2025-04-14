@@ -206,28 +206,10 @@ $(function () {
 
   //co005 이미지모션
   $(".right01 li").on("mouseenter", function () {
-    $(this).find(".bg08").addClass("on");
+    $(this).find(".bg08, .bg09, .bg10, .bg11").addClass("on");
   });
   $(".right01 li").on("mouseleave", function () {
-    $(this).find(".bg08").removeClass("on");
-  });
-  $(".right01 li").on("mouseenter", function () {
-    $(this).find(".bg09").addClass("on");
-  });
-  $(".right01 li").on("mouseleave", function () {
-    $(this).find(".bg09").removeClass("on");
-  });
-  $(".right01 li").on("mouseenter", function () {
-    $(this).find(".bg10").addClass("on");
-  });
-  $(".right01 li").on("mouseleave", function () {
-    $(this).find(".bg10").removeClass("on");
-  });
-  $(".right01 li").on("mouseenter", function () {
-    $(this).find(".bg11").addClass("on");
-  });
-  $(".right01 li").on("mouseleave", function () {
-    $(this).find(".bg11").removeClass("on");
+    $(this).find(".bg08, .bg09, .bg10, .bg11").removeClass("on");
   });
 
   //con06 슬라이드버튼

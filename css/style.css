@@ -772,20 +772,20 @@ body {
   }
 
   .con05 .bg09.on {
-    opacity: 0.5;
-    transform: scale(0.5);
+    opacity: 1;
+    transform: scale(1.1);
   }
   .con05 .bg10.on {
-    opacity: 0.5;
-    transform: scale(0.5);
+    opacity: 1;
+    transform: scale(1.1);
   }
   .con05 .bg11.on {
-    opacity: 0.5;
-    transform: scale(0.5);
+    transform: scale(1.1);
+    opacity: 1;
   }
   .con05 .bg08.on {
-    opacity: 0.5;
     transform: scale(0);
+    opacity: 0;
   }
   /* right01 글씨 */
   .con05 .right01 p {
@@ -1725,20 +1725,20 @@ body {
   }
 
   .con05 .bg09.on {
-    opacity: 0.5;
-    transform: scale(0.5);
+    opacity: 1;
+    transform: scale(1.1);
   }
   .con05 .bg10.on {
-    opacity: 0.5;
-    transform: scale(0.5);
+    opacity: 1;
+    transform: scale(1.1);
   }
   .con05 .bg11.on {
-    opacity: 0.5;
-    transform: scale(0.5);
+    transform: scale(1.1);
+    opacity: 1;
   }
   .con05 .bg08.on {
-    opacity: 0.5;
     transform: scale(0);
+    opacity: 0;
   }
   /* right01 글씨 */
   .con05 .right01 p {
@@ -2653,16 +2653,20 @@ body {
   }
 
   .con05 .bg09.on {
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1.1);
   }
   .con05 .bg10.on {
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1.1);
   }
   .con05 .bg11.on {
-    opacity: 0;
+    transform: scale(1.1);
+    opacity: 1;
   }
   .con05 .bg08.on {
     transform: scale(0);
+    opacity: 0;
   }
   /* right01 글씨 */
   .con05 .right01 p {
@@ -3613,18 +3617,21 @@ body {
 
     object-fit: cover;
   }
-
   .con05 .bg09.on {
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1.1);
   }
   .con05 .bg10.on {
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1.1);
   }
   .con05 .bg11.on {
-    opacity: 0;
+    transform: scale(1.1);
+    opacity: 1;
   }
   .con05 .bg08.on {
     transform: scale(0);
+    opacity: 0;
   }
   /* right01 글씨 */
   .con05 .right01 p {
